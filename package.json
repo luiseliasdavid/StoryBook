@@ -12,7 +12,7 @@
   },
   "peerDependencies": {
     "react": ">=16",
-    "typescript": ">=4.0.0"
+    "typescript":">=4.0.0"
   },
   "release": {
     "branches": [
@@ -78,9 +78,16 @@
     "copyfiles": "^2.4.1",
     "prop-types": "15.8.1",
     "rimraf": "^5.0.0",
-    "semantic-release": "^21.0.1",
     "storybook": "7.0.6"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "my-storybook@0.1.0"
+  "_id": "my-storybook@0.1.0",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+]
 }
